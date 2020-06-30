@@ -1,6 +1,72 @@
+@media (min-width:320px)  { 
+    /* smartphones, iPhone, portrait 480x320 phones */
+    .content{
+        width: 100%;
+    }
+    mat-drawer{
+        width: 70%;
+    }
+}
+@media (min-width:481px)  { 
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    .content{
+        width: 100%;
+    }
+    mat-drawer{
+        width: 50%;
+    }
+}
+@media (min-width:641px)  { 
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    .content{
+        width: 300px;
+        margin: 0 auto;
+    }
+    mat-drawer{
+        width: 40%;
+    }
+}
+@media (min-width:961px)  { 
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .content{
+        width: 400px;
+        margin: 0 auto;
+    }
+    mat-drawer{
+        width: 20%;
+    }
+}
+@media (min-width:1025px) { 
+    /* big landscape tablets, laptops, and desktops */
+    .content{
+        width: 400px;
+        margin: 0 auto;
+    }
+    mat-drawer{
+        width: 15%;
+    }
+}
+@media (min-width:1281px) { 
+    /* hi-res laptops and desktops */
+    .content{
+        width: 400px;
+        margin: 0 auto;
+    }
+    mat-drawer{
+        width: 15%;
+    }
+}
+
 app-navbar {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+}
+mat-drawer{
+    position: fixed;
+    top: 0;
+    padding: 10px 0 0 15px;
+    background-color: rgb(47, 47, 47);
+    color: goldenrod;
 }
