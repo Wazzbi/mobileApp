@@ -1,2 +1,7 @@
-<app-navbar></app-navbar>
-<app-home></app-home>
+<mat-drawer-container class="example-container" hasBackdrop="true">
+    <mat-drawer #drawer mode="over">I'm a drawer</mat-drawer>
+    <mat-drawer-content>
+        <app-navbar (menu)="drawer.toggle()"></app-navbar>
+        <app-home></app-home>
+    </mat-drawer-content>
+</mat-drawer-container>
