@@ -14,6 +14,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   movieListRequest = ['Joker', 'Top Gun', 'Rain man'];
   movieListResponse: Movie[] = [];
   movieListSub: Subscription;
+  isPlotExtended: boolean = false;
 
 
   constructor(private dataService: DataService) { }
@@ -26,5 +27,9 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.movieListSub.unsubscribe();
+  }
+
+  clickPlot(): void{
+    this.isPlotExtended = !this.isPlotExtended;
   }
 }

@@ -4,21 +4,17 @@
     mat-card-content{
         text-overflow: ellipsis;
         overflow: hidden; 
-        max-height: 9.5em; 
-        white-space: normal;
-    }
-}
+        white-space: normal;   
 
-#overlay {
-    position: fixed; /* Sit on top of the page content */
-    display: none; /* Hidden by default */
-    width: inherit; /* Full width (cover the whole page) */
-    height: inherit; /* Full height (cover the whole page) */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
-  }
+        &.plotExtended {
+            max-height: 50.7em;
+        }
+        &.plotMinimazed {
+            max-height: 10.7em; 
+            background: -webkit-repeating-linear-gradient(top, #000000, #000000ad, #00000000);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+}
