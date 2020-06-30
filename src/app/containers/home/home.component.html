@@ -1,15 +1,16 @@
-
-<mat-card class="movie-card" *ngFor="let movie of movieListResponse">
-  <mat-card-header>
-    <mat-card-title>{{movie.Title}}</mat-card-title>
-    <mat-card-subtitle>{{movie.Genre}} {{movie.Year}}</mat-card-subtitle>
-  </mat-card-header>
-  <img mat-card-image [src]="movie.Poster" [alt]="movie.Title" >
-  <mat-card-content (click)="clickPlot()" [ngClass]="isPlotExtended ? 'plotExtended' : 'plotMinimazed'">
-    {{movie.Plot}}
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-stroked-button>LIKE</button>
-    <button mat-stroked-button>SHARE</button>
-  </mat-card-actions>
-</mat-card>
+<div class="home-selection">
+  <mat-card class="movie-card" *ngFor="let movie of movieListResponse">
+    <mat-card-header>
+      <mat-card-title>{{movie.Title}}</mat-card-title>
+      <mat-card-subtitle>{{movie.Genre}} {{movie.Year}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="movie.Poster" [alt]="movie.Title" >
+    <mat-card-content (click)="clickPlot()" [ngClass]="isPlotExtended ? 'plotExtended' : 'plotMinimazed'">
+      {{movie.Plot}}
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-stroked-button>LIKE</button>
+      <button mat-stroked-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

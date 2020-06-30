@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.movieListSub.unsubscribe();
   }
 
-  clickPlot(): void{
+  clickPlot(): void {
     this.isPlotExtended = !this.isPlotExtended;
   }
 }
