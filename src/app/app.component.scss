@@ -66,12 +66,17 @@ app-navbar {
 mat-drawer{
     position: fixed;
     top: 0;
-    padding: 15px 0 0 15px;
+    padding: 10px 0 0 15px;
     background-color: rgb(47, 47, 47);
     color: goldenrod;
 
-    mat-icon{
-        vertical-align: text-bottom;
+    .menu-row{
+        display: flex;
+        //box-sizing: border-box;
+        //width: 100%;
+        //flex-direction: row;
+        align-items: center;
+        //white-space: nowrap;
     }
 
     span{
