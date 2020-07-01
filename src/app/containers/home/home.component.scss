@@ -16,7 +16,6 @@
             position: relative;
             width: 100%;
             height: 500px;
-            text-align: center;
             transition: transform 0.8s;
             transform-style: preserve-3d;
         }
@@ -37,10 +36,25 @@
                 height: 500px;
             }
         }
-        .flip-card-back {
-            background-color: dodgerblue;
+        .info{
+            position: relative;
+            top: -80px;
             color: white;
+            font-size: 50px;
+        }
+        .flip-card-back {
+            background-color: rgb(224, 224, 224);
             transform: rotateY(180deg);
+            border-radius: 5px;
+        }
+        .data{
+            height: 460px;
+            background-color: rgba(255, 255, 255, 0.85);
+            //backdrop-filter: blur(4px); zpomaluje načítání
+            padding: 20px;
+            td{
+                vertical-align: top;
+            }
         }
     
         mat-card-content{
@@ -60,6 +74,5 @@
                 -webkit-text-fill-color: transparent;
             }
         }
-    
     }
 }

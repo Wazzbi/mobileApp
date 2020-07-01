@@ -15,6 +15,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   movieListResponse: Movie[] = [];
   movieListSub: Subscription;
   isPlotExtended: boolean = false;
+  cardState: string = 'initial';
 
 
   constructor(private dataService: DataService) { }

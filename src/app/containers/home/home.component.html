@@ -6,14 +6,54 @@
     </mat-card-header>
     <div class="flip-card">
       <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img mat-card-image [src]="movie.Poster" [alt]="movie.Title" >
-        </div>
-        <div class="flip-card-back">
-          <h1>John Doe</h1> 
-          <p>Architect & Engineer</p> 
-          <p>We love that guy</p>
-        </div>
+          <div class="flip-card-front">
+            <img mat-card-image [src]="movie.Poster" [alt]="movie.Title">
+            <button mat-icon-button>
+              <mat-icon class="info">info_outline</mat-icon>
+            </button>
+          </div>
+          <div class="flip-card-back" [ngStyle]="{'background-image': 'url(' + movie.Poster + ')', 'background-size': 'cover'}">
+            <div class="data">
+              <table>
+                <tr>
+                  <td>Director: </td>
+                  <td>{{movie.Director}}</td>
+                </tr>
+
+                <tr>
+                  <td>Writer: </td>
+                  <td>{{movie.Writer}}</td>
+                </tr>
+
+                <tr>
+                  <td>Actors: </td>
+                  <td>{{movie.Actors}}</td>
+                </tr>
+
+                <tr>
+                  <td>Language: </td>
+                  <td>{{movie.Language}}</td>
+                </tr>
+
+                <tr>
+                  <td>Country: </td>
+                  <td>{{movie.Country}}</td>
+                </tr>
+
+                <tr>
+                  <td>Awards: </td>
+                  <td>{{movie.Awards}}</td>
+                </tr>
+              </table>
+              <br>
+              <table>
+                <tr *ngFor="let score of movie.Ratings">
+                  <td>{{score.Source}} </td>
+                  <td>&nbsp;{{score.Value}}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
       </div>
     </div>
     <mat-card-content (click)="clickPlot()" [ngClass]="isPlotExtended ? 'plotExtended' : 'plotMinimazed'">
