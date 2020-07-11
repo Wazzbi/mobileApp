@@ -15,7 +15,6 @@ export class HomeComponent implements OnInit, OnDestroy {
   movieListRequest = ['Joker', 'Top Gun', 'Rain man'];
   movieListResponse: Movie[] = [];
   movieListSub: Subscription;
-  isPlotExtended: boolean = false;
   cardState: string = 'initial';
   isDarkTheme$: Observable<boolean>;
 
@@ -34,7 +33,5 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.movieListSub.unsubscribe();
   }
 
-  clickPlot(): void {
-    this.isPlotExtended = !this.isPlotExtended;
-  }
+
 }

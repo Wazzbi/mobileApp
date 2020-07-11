@@ -1,0 +1,82 @@
+/* mat-card:first-child{
+    margin: 70px 5px 0px 5px;
+} */
+
+mat-card {
+    //margin: 15px 5px 15px 5px;
+
+    .flip-card{
+        background-color: transparent;
+        width: 100%;
+        height: 500px;
+        perspective: 1000px;
+    }
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+    .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 500px;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+    }
+    .flip-card-front {
+        margin-top: 15px;
+        img{
+            width: calc(100% + 32px);
+            height: 500px;
+        }
+    }
+    .info{
+        position: relative;
+        top: -80px;
+        color: white;
+        font-size: 50px;
+    }
+    .flip-card-back {
+        //background-color: rgb(224, 224, 224);
+        transform: rotateY(180deg);
+        border-radius: 5px;
+    }
+    .data{
+        height: 460px;
+        background-color: rgba(255, 255, 255, 0.9);
+        //backdrop-filter: blur(4px); zpomaluje načítání
+        padding: 20px;
+        td{
+            vertical-align: top;
+        }
+    } 
+
+    mat-card-content{
+        padding-top: 10px;
+        text-overflow: ellipsis;
+        overflow: hidden; 
+        white-space: normal;
+        cursor: pointer;  
+
+        &.plotExtended {
+            max-height: 50.7em;
+        }
+        &.plotMinimazed-light {
+            max-height: 10.7em; 
+            background: -webkit-repeating-linear-gradient(top, #000000, #000000ad, #00000000);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        &.plotMinimazed-dark {
+            max-height: 10.7em; 
+            background: -webkit-repeating-linear-gradient(top, #ffffff, #ffffffad, #ffffff00);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
