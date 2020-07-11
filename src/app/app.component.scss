@@ -10,7 +10,8 @@
 @media (min-width:481px)  { 
     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
     .content{
-        width: 100%;
+        width: 300px;
+        margin: 0 auto;
     }
     mat-drawer{
         width: 50%;
@@ -19,7 +20,7 @@
 @media (min-width:641px)  { 
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
     .content{
-        width: 300px;
+        width: 400px;
         margin: 0 auto;
     }
     mat-drawer{
@@ -57,13 +58,13 @@
     }
 }
 
-app-navbar {
+/* app-navbar {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
     //transition: top 0.3s;
-}
+} */
 mat-drawer{
     position: fixed;
     top: 0;

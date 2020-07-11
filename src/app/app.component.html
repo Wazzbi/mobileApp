@@ -1,6 +1,6 @@
 <div [ngClass]="{'dark-theme': isDarkTheme$ | async}">
     <div class="mat-app-background">
-        <mat-drawer-container class="container" hasBackdrop="false">
+        <mat-drawer-container class="container" [hasBackdrop]="width < 820 ? true : false">
             <mat-drawer #drawer mode="over">
                 <mat-toolbar color="primary">
                     <button mat-icon-button (click)="drawer.toggle()">

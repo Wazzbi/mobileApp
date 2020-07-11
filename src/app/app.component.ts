@@ -9,6 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent implements OnInit {
   title = 'mobileApp';
+  width: number;
 
   isDarkTheme$: Observable<boolean>;
 
@@ -16,5 +17,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.isDarkTheme$ = this.themeService.isDarkTheme;
+    // TODO: toto by mohla být observable když otočíš tablet, mobil atd
+    this.width = window.innerWidth ? window.innerWidth : screen.width;
   }
 }
