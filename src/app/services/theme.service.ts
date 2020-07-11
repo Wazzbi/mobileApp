@@ -5,10 +5,9 @@ import { Subject } from 'rxjs';
   providedIn: 'root'
 })
 export class ThemeService {
-  private _darkTheme = new Subject<boolean>();
-  isDarkTheme = this._darkTheme.asObservable();
+  isDarkTheme = new Subject<boolean>();
 
   setDarkTheme(isDarkTheme: boolean): void {
-    this._darkTheme.next(isDarkTheme);
+    this.isDarkTheme.next(isDarkTheme);
   }
 }
