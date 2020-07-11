@@ -1,12 +1,14 @@
 <div [ngClass]="{'dark-theme': isDarkTheme$ | async}">
     <div class="mat-app-background">
-        <mat-drawer-container class="container" hasBackdrop="true">
+        <mat-drawer-container class="container" hasBackdrop="false">
             <mat-drawer #drawer mode="over">
-                <div class="menu-row">
+                <mat-toolbar color="primary">
                     <button mat-icon-button (click)="drawer.toggle()">
                         <mat-icon>menu</mat-icon>
                     </button>
                     <span id="company-name">My App</span>
+                </mat-toolbar>
+                <div class="menu-row">
                 </div>
             </mat-drawer>
             <mat-drawer-content>

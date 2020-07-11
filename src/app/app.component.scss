@@ -43,7 +43,7 @@
         margin: 0 auto;
     }
     mat-drawer{
-        width: 15%;
+        width: 20%;
     }
 }
 @media (min-width:1281px) { 
@@ -62,14 +62,13 @@ app-navbar {
     top: 0;
     width: 100%;
     z-index: 1000;
+    //transition: top 0.3s;
 }
 mat-drawer{
     position: fixed;
     top: 0;
-    padding: 10px 0 0 15px;
-    background-color: rgb(47, 47, 47);
-    color: goldenrod;
 
+    // možná se bude hodit na další řádky
     .menu-row{
         display: flex;
         //box-sizing: border-box;
@@ -82,7 +81,7 @@ mat-drawer{
     span{
         &#company-name{
             font-size: 20px;
-            font-weight: 500;
+            // font-weight: 500;
         }
         font-size: 16px;
     }
