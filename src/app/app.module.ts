@@ -11,12 +11,15 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { NavbarComponent } from './containers/navbar/navbar.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { FilmCardComponent } from './components/film-card/film-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    FilmCardComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

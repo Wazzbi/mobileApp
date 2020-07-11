@@ -43,7 +43,7 @@
             font-size: 50px;
         }
         .flip-card-back {
-            background-color: rgb(224, 224, 224);
+            //background-color: rgb(224, 224, 224);
             transform: rotateY(180deg);
             border-radius: 5px;
         }
@@ -55,7 +55,7 @@
             td{
                 vertical-align: top;
             }
-        }
+        } 
     
         mat-card-content{
             padding-top: 10px;

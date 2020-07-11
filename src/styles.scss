@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import './styles/material-theme';
+
 // TODO: zkontrolovat si pro jednotlivé zařízení jak to funguje. toto není optimální 
 html, body { 
     height: 100%;
@@ -6,5 +8,5 @@ html, body {
 body { 
     margin: 0; 
     font-family: Roboto, "Helvetica Neue", sans-serif; 
-    background-color: whitesmoke;
+    // background-color: whitesmoke;
 }
