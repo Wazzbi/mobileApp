@@ -21,6 +21,17 @@ mat-card {
     .flip-card:hover .flip-card-inner {
         transform: rotateY(180deg);
     }
+    // TODO: vxt eaoay fungovalo na klik
+    /* @media(hover: hover) and (pointer: fine) {
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+    }
+    @media (pointer: coarse), (hover: none) {
+        .flip-card: .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+    } */
     .flip-card-front, .flip-card-back {
         position: absolute;
         width: 100%;

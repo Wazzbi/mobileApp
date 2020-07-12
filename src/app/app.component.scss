@@ -1,7 +1,9 @@
 @media (min-width:320px)  { 
     /* smartphones, iPhone, portrait 480x320 phones */
     .content{
-        width: 100%;
+        width: 95%;
+        margin: 0 auto;
+        z-index: 2;
     }
     mat-drawer{
         width: 70%;
@@ -12,6 +14,7 @@
     .content{
         width: 300px;
         margin: 0 auto;
+        z-index: 2;
     }
     mat-drawer{
         width: 50%;
@@ -22,6 +25,7 @@
     .content{
         width: 400px;
         margin: 0 auto;
+        z-index: 2;
     }
     mat-drawer{
         width: 40%;
@@ -32,6 +36,7 @@
     .content{
         width: 400px;
         margin: 0 auto;
+        z-index: 2;
     }
     mat-drawer{
         width: 20%;
@@ -42,6 +47,7 @@
     .content{
         width: 400px;
         margin: 0 auto;
+        z-index: 2;
     }
     mat-drawer{
         width: 20%;
@@ -52,6 +58,7 @@
     .content{
         width: 400px;
         margin: 0 auto;
+        z-index: 2;
     }
     mat-drawer{
         width: 15%;
@@ -62,7 +69,7 @@ app-navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 1;
     //transition: top 0.3s;
 }
 mat-drawer{
