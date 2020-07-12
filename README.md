@@ -4,6 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## TODO
 
+loading screen while http request etc
 movie categories
 movie detail
 movie galerry (multi carusel)

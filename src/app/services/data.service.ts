@@ -7,7 +7,7 @@ import { Movie } from '../models/movie';
   providedIn: 'root'
 })
 export class DataService {
-  private baseUrl = 'http://www.omdbapi.com/?i=tt3896198&apikey=81ef110f';
+  private baseUrl = 'https://www.omdbapi.com/?i=tt3896198&apikey=81ef110f';
 
   constructor(private http: HttpClient) { }
 

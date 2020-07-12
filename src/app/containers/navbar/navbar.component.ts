@@ -18,7 +18,7 @@ enum Direction {
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
-  styles: [
+  /* styles: [
     `
       :host {
         position: fixed;
@@ -40,9 +40,9 @@ enum Direction {
       ),
       transition('* => *', animate('200ms ease-in'))
     ])
-  ]
+  ] */
 })
-export class NavbarComponent implements OnInit, AfterViewInit {
+export class NavbarComponent implements OnInit {
   @Output() menu = new EventEmitter();
 
   isDarkTheme$: Observable<boolean>;
@@ -58,7 +58,7 @@ export class NavbarComponent implements OnInit, AfterViewInit {
     this.themeService.setDarkTheme(checked);
   }
 
-  @HostBinding('@toggle')
+  /* @HostBinding('@toggle')
   get toggle(): VisibilityState {
     return this.isVisible ? VisibilityState.Visible : VisibilityState.Hidden;
   }
@@ -83,6 +83,6 @@ export class NavbarComponent implements OnInit, AfterViewInit {
 
     scrollUp$.subscribe(() => (this.isVisible = true));
     scrollDown.subscribe(() => (this.isVisible = false));
-  }
+  } */
 
 }

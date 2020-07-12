@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "mobileapp2-520a7": {
+      "hosting": {
+        "mobileApp": [
+          "mobileapp2-520a7"
+        ]
+      }
+    }
+  }
+}
