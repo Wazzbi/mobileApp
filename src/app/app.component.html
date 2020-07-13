@@ -1,8 +1,10 @@
 <div [ngClass]="{'dark-theme': isDarkTheme$ | async}">
     <div class="mat-app-background">
+        <app-navbar (menu)="drawer.toggle()"></app-navbar>
         <mat-drawer-container class="container" [hasBackdrop]="width < 820 ? true : false">
             <mat-drawer #drawer mode="over">
                 <mat-toolbar color="primary">
+                    <!-- tento toggle neni potreba-->
                     <button mat-icon-button (click)="drawer.toggle()">
                         <mat-icon>menu</mat-icon>
                     </button>
@@ -12,7 +14,6 @@
                 </div>
             </mat-drawer>
             <mat-drawer-content>
-                <app-navbar (menu)="drawer.toggle()"></app-navbar>
                 <div class="content">
                     <app-home></app-home>
                 </div>

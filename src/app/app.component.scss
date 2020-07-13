@@ -66,15 +66,22 @@
 }
 
 app-navbar {
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 100%;
     position: fixed;
     top: 0;
-    width: 100%;
-    z-index: 1;
-    //transition: top 0.3s;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    box-shadow: none;
 }
 mat-drawer{
     position: fixed;
     top: 0;
+    overflow: hidden;
 
     // možná se bude hodit na další řádky
     .menu-row{
