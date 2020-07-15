@@ -17,7 +17,7 @@ export class FilmCardComponent implements OnInit {
   constructor(private themeService: ThemeService) { }
 
   ngOnInit() {
-    this.isDarkTheme$ = this.themeService.isDarkTheme;
+    this.isDarkTheme$ = this.themeService.isDarkTheme$;
   }
 
 

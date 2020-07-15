@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   constructor(private themeService: ThemeService) { }
 
   ngOnInit() {
-    this.isDarkTheme$ = this.themeService.isDarkTheme;
+    this.isDarkTheme$ = this.themeService.isDarkTheme$;
     // TODO: toto by mohla být observable když otočíš tablet, mobil atd (viz oblíbené v stackoverflow)
     this.width = window.innerWidth ? window.innerWidth : screen.width;
   }

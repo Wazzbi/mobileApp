@@ -5,9 +5,11 @@ import { Subject } from 'rxjs';
   providedIn: 'root'
 })
 export class ThemeService {
-  isDarkTheme = new Subject<boolean>();
+  _isDarkTheme = new Subject<boolean>();
+  // zabalení subjektu do observable způsobí, že nelze použít next z venčí
+  isDarkTheme$ = this._isDarkTheme.asObservable();
 
   setDarkTheme(isDarkTheme: boolean): void {
-    this.isDarkTheme.next(isDarkTheme);
+    this._isDarkTheme.next(isDarkTheme);
   }
 }

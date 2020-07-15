@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       concatMap(title => this.dataService.getMovieByTitle(title))
     ).subscribe(movie => this.movieListResponse.push(movie));
 
-    this.isDarkTheme$ = this.themeService.isDarkTheme;
+    this.isDarkTheme$ = this.themeService.isDarkTheme$;
   }
 
   ngOnDestroy(): void {
