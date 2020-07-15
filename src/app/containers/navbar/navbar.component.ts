@@ -21,10 +21,10 @@ enum Direction {
   /* styles: [
     `
       :host {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1000;
+        // position: fixed;
+        // top: 0;
+        // width: 100%;
+        // z-index: 1000;
       }
     `
   ],
@@ -46,6 +46,7 @@ export class NavbarComponent implements OnInit {
   @Output() menu = new EventEmitter();
 
   isDarkTheme$: Observable<boolean>;
+  isDarkTheme2: boolean;
   private isVisible = true;
 
   constructor(private themeService: ThemeService) { }
