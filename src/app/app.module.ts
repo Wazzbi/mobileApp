@@ -1,3 +1,6 @@
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { LandingPageComponent } from './containers/landing-page/landing-page.component';
+import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -19,7 +22,9 @@ import { FilmCardComponent } from './components/film-card/film-card.component';
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    FilmCardComponent
+    FilmCardComponent,
+    LandingPageComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +35,8 @@ import { FilmCardComponent } from './components/film-card/film-card.component';
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
